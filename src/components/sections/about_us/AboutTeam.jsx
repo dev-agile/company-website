@@ -1,4 +1,4 @@
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+// import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { ThreeDCard } from "../../ui/3dcard/ThreeDCard";
 
 const AboutTeam = () => {
@@ -38,7 +38,7 @@ const AboutTeam = () => {
           <div>
             {pointsAboutTeam.map((point, index) => (
               <div key={index} class="flex gap-2 mb-4">
-                <CheckCircleOutlineIcon className="text-blue-600 mr-2" />
+                {/* <CheckCircleOutlineIcon className="text-blue-600 mr-2" /> */}
                 <p class="text-lg text-heading-3 font-medium">{point}</p>
               </div>
             ))}

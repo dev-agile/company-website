@@ -1,6 +1,5 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
 
 const ServicesHeroSection = () => {
   return (
@@ -33,16 +32,6 @@ const ServicesHeroSection = () => {
               services
             </p>
 
-            <Button
-              variant="outlined"
-              className="!border-zinc-300 !mt-[50px] !p-3 !pr-5 !pl-5 !text-slate-200 !rounded-xl !capitalize !text-lg !border-2"
-            >
-              
-              Let’s Discuss Opportunities
-              <span className="!ml-4">
-                <ChevronRightIcon />
-              </span>
-            </Button>
           </div>
         </div>
       </div>
