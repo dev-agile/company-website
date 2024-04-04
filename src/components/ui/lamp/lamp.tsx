@@ -3,25 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../../utils/cn";
 
-export function LampDemo() {
-  return (
-    <LampContainer>
-      <motion.h1
-        initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-      >
-        Build lamps <br /> the right way
-      </motion.h1>
-    </LampContainer>
-  );
-}
-
 export const LampContainer = ({
   children,
   className,
@@ -32,7 +13,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex max-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
+        "relative flex max-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full z-0",
         className
       )}
     >
@@ -80,7 +61,7 @@ export const LampContainer = ({
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-cyan-400 blur-2xl"
+          className="absolute inset-auto z-30 h-36 w-64 -translate-y-[2rem] rounded-full bg-cyan-400 blur-2xl"
         ></motion.div>
         <motion.div
           initial={{ width: "15rem" }}
@@ -96,7 +77,7 @@ export const LampContainer = ({
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
 
-      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+      <div className=" z-20 flex sm:-translate-y-32 flex-col items-center px-5">
         {children}
       </div>
     </div>

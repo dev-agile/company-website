@@ -3,9 +3,9 @@ import { BackgroundBoxes } from "../../ui/backgroundBoxes/BackgroundBoxes";
 
 const HeroSection = () => {
   return (
-    <section class="relative ">
+   
       <BackgroundBoxes />
-    </section>
+    
   );
 };
 

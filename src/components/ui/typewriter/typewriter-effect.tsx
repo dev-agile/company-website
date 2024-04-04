@@ -109,7 +109,6 @@ export const TypewriterEffectSmooth = ({
   className?: string;
   cursorClassName?: string;
 }) => {
-  // split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {
       ...word,
@@ -155,7 +154,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className=" text-5xl font-bold"
+          className=" sm:text-5xl text-base font-bold"
           style={{
             whiteSpace: "nowrap",
           }}

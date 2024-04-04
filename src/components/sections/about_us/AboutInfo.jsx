@@ -23,7 +23,7 @@ const AboutInfo = () => {
           </div>
         ))}
       </div> */}
-      <p class="text-6xl text-center text-heading-3 mb-5 font-bold">
+      <p class="md:text-6xl text-2xl text-center text-heading-3 mb-5 font-bold">
         Company Values
       </p>
 

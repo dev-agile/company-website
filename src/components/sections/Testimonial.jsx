@@ -51,34 +51,48 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="flex items-center justify-center w-full">
-      <button
-        onClick={goToPrev}
-        className="w-12 h-12 flex justify-center items-center p-4 bg-gray-200 hover:bg-gray-300 rounded-full mr-4 "
-      >
-        &lt;
-      </button>
+    <>
+      <div className="flex items-center justify-center w-full">
+        <button
+          onClick={goToPrev}
+          className="w-12 h-12 hidden md:flex justify-center items-center  p-4 bg-gray-200 hover:bg-gray-300 rounded-full mr-4 "
+        >
+          &lt;
+        </button>
 
-      <div className="w-full overflow-hidden mx-4">
-        <TestimonialCard
-          description={testimonials[activeIndex].description}
-          name={testimonials[activeIndex].name}
-          role={testimonials[activeIndex].role}
-          company={testimonials[activeIndex].company}
-          companyIcon={testimonials[activeIndex].companyIcon}
-          image={testimonials[activeIndex].image}
-        />
+        <div className="w-full overflow-hidden mx-2 md:mx-4">
+          <TestimonialCard
+            description={testimonials[activeIndex].description}
+            name={testimonials[activeIndex].name}
+            role={testimonials[activeIndex].role}
+            company={testimonials[activeIndex].company}
+            companyIcon={testimonials[activeIndex].companyIcon}
+            image={testimonials[activeIndex].image}
+          />
+        </div>
+
+        <button
+          onClick={goToNext}
+          className="w-12 h-12  hidden md:flex justify-center items-center p-4 bg-gray-200 hover:bg-gray-300 rounded-full ml-4"
+        >
+          &gt;
+        </button>
       </div>
-
-      <button
-        onClick={goToNext}
-        className="w-12 h-12 flex justify-center items-center p-4 bg-gray-200 hover:bg-gray-300 rounded-full ml-4"
-      >
-        &gt;
-      </button>
-    </div>
+      <div className="flex items-center justify-center mt-3 md:hidden">
+        <button
+          onClick={goToPrev}
+          className="w-12 h-12 flex justify-center items-center p-2 bg-gray-200 hover:bg-gray-300 rounded-full mr-4 "
+        >
+          &lt;
+        </button>
+        <button
+          onClick={goToNext}
+          className="w-12 h-12 flex justify-center items-center p-2 bg-gray-200 hover:bg-gray-300 rounded-full ml-4"
+        >
+          &gt;
+        </button>
+      </div>
+    </>
   );
 };
 export default Testimonial;
-
-

@@ -3,13 +3,11 @@ import { InfiniteMovingCards } from "./infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className=" flex flex-col antialiased  items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={companyValues}
         direction="right"
         speed="slow"
       />
-    </div>
   );
 }
 
@@ -42,7 +40,6 @@ const companyValues = [
   }
 ];
 
-// const testimonials = [
 //   {
 //     quote:
 //       "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",

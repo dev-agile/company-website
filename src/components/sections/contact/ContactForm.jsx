@@ -27,9 +27,9 @@ const ContactForm = () => {
   return (
     <div className="container mx-auto p-4 mt-10">
       <div className="flex flex-wrap -mx-2">
-        <div className="w-full lg:w-1/2 px-2 mb-4">
+        <div className="w-full lg:w-1/2 mb-4">
           <div className="flex justify-center items-center flex-col ">
-            <div className="border rounded-full p-5  shadow-lg bg-gradient-to-r from-[#83aaff] to-[#254975]">
+            <div className="border rounded-full sm:p-5 p-2 shadow-lg bg-gradient-to-r from-[#83aaff] to-[#254975]">
               <img
                 const
                 src="https://samartheme2.vercel.app/images/team/large/pic3.jpg"
@@ -38,7 +38,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="w-full ">
-              <div className="border rounded-full p-5 w-64 h-64 shadow-lg bg-gradient-to-r from-[#83aaff] to-[#254975]">
+              <div className="border rounded-full sm:p-5 p-2 w-64 h-64 shadow-lg bg-gradient-to-r from-[#83aaff] to-[#254975]">
                 <img
                   src="https://samartheme2.vercel.app/images/team/large/pic2.jpg"
                   alt="Profile"
@@ -46,7 +46,7 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className="border rounded-full p-5 shadow-lg bg-gradient-to-r from-[#83aaff] to-[#254975]">
+            <div className="border rounded-full sm:p-5 p-2 shadow-lg bg-gradient-to-r from-[#83aaff] to-[#254975]">
               <img
                 src="https://samartheme2.vercel.app/images/team/large/pic1.jpg"
                 alt="Profile"
@@ -73,11 +73,11 @@ const ContactForm = () => {
             validationSchema={validationSchema}
             onSubmit={handleSubmit}
           >
-            <Form className="px-8 pt-6 pb-8 mb-4">
+            <Form className="sm:px-8 px-1 pt-6 pb-8 mb-4">
               <p className="text-3xl font-bold dark:text-white mb-6">
                 Contact form
               </p>
-              <div className="mb-4 flex justify-between gap-7">
+              <div className="mb-4 flex justify-between gap-2 sm:gap-7">
                 <Field
                   name="firstName"
                   type="text"
@@ -103,7 +103,7 @@ const ContactForm = () => {
                   className="text-red-500 text-xs italic"
                 />
               </div>
-              <div className="mb-4  flex justify-between gap-7">
+              <div className="mb-4  flex justify-between gap-3 sm:gap-7">
                 <Field
                   name="email"
                   type="email"
@@ -118,7 +118,7 @@ const ContactForm = () => {
                 />
               </div>
 
-              <div className="mb-4 flex justify-between gap-7">
+              <div className="mb-4 flex justify-between gap-3 sm:gap-7">
                 <ErrorMessage
                   name="email"
                   component="div"
@@ -131,7 +131,7 @@ const ContactForm = () => {
                 />
               </div>
 
-              <div className="mb-4 flex justify-between gap-7">
+              <div className="mb-4 flex justify-between gap-2 sm:gap-7">
                 <Field
                   name="projectTitle"
                   type="text"
@@ -150,7 +150,7 @@ const ContactForm = () => {
                 </Field>
               </div>
 
-              <div className="mb-4 flex justify-between gap-7">
+              <div className="mb-4 flex justify-between gap-2 sm:gap-7">
                 <ErrorMessage
                   name="projectTitle"
                   component="div"

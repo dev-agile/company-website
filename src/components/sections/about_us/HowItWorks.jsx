@@ -1,12 +1,12 @@
 import { DirectionAwareHoverBox } from "../../ui/directionAwareHover/DirectionAwareHoverBox";
 const Step = ({ icon, title, description }) => (
-  <div className="flex flex-col gap-4 justify-center items-center text-center">
-    <div className="border rounded-sm p-[1px] shadow-lg bg-gradient-to-r from-blue-600 to-green-400 w-fit">
+
+    <div className="border rounded-md p-[2px] shadow-lgw-fit">
      <DirectionAwareHoverBox img={icon} title={title} description={description}/>
+     <h3 className="text-2xl text-heading-2-reverse text-center font-semibold mt-2">{title}</h3>
+    <p className="text-heading-3-reverse text-center text-lg">{description}</p>
     </div>
-    <h3 className="text-2xl text-heading-2-reverse font-semibold mt-2">{title}</h3>
-    <p className="text-heading-3-reverse text-lg">{description}</p>
-  </div>
+   
 );
 
 const HowItWorks = () => {
@@ -42,7 +42,7 @@ const HowItWorks = () => {
             How It’s Work
           </h1>
         </div>
-        <div className="flex justify-around">
+        <div className="grid grid-cols-2x md:grid-cols-3 gap-10">
           {steps.map((step, index) => (
             <Step key={index} {...step} />
           ))}

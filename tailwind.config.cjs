@@ -1,31 +1,36 @@
-
 const {
-	default: flattenColorPalette,
-  } = require("tailwindcss/lib/util/flattenColorPalette");
-  
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"], 
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   darkMode: "class",
   theme: {
     extend: {
       colors: {
-				'body-reverse': "rgb(var(--color-body-reverse))",
-				body: "rgb(var(--color-bg))",
-				"box-bg": "rgb(var(--color-box))",
-				"box-shadow": "rgb(var(--box-sd))",
-				"box-border": "rgb(var(--box-border))",
-				primary: "#1d4ed8",
-				"heading-1": "rgb(var(--heading-1))",
-				"heading-2": "rgb(var(--heading-2))",
-				"heading-3": "rgb(var(--heading-3))",
-				"heading-1-reverse": "rgb(var(--heading-1-reverse))",
-				"heading-2-reverse": "rgb(var(--heading-2-reverse))",
-				"heading-3-reverse": "rgb(var(--heading-3-reverse))",
-			},
-      screens:{
-				midmd:"880px"
-			},
+        "body-reverse": "rgb(var(--color-body-reverse))",
+        body: "rgb(var(--color-bg))",
+        "box-bg": "rgb(var(--color-box))",
+        "box-shadow": "rgb(var(--box-sd))",
+        "box-border": "rgb(var(--box-border))",
+        primary: "#1d4ed8",
+        "heading-1": "rgb(var(--heading-1))",
+        "heading-2": "rgb(var(--heading-2))",
+        "heading-3": "rgb(var(--heading-3))",
+        "heading-1-reverse": "rgb(var(--heading-1-reverse))",
+        "heading-2-reverse": "rgb(var(--heading-2-reverse))",
+        "heading-3-reverse": "rgb(var(--heading-3-reverse))",
+      },
+      screens: {
+        xxs: "360px",
+        xs: "480px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
@@ -115,14 +120,12 @@ module.exports = {
 };
 
 function addVariablesForColors({ addBase, theme }) {
-	let allColors = flattenColorPalette(theme("colors"));
-	let newVars = Object.fromEntries(
-	  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-	);
-  
-	addBase({
-	  ":root": newVars,
-	});
-  }
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
 
-  
+  addBase({
+    ":root": newVars,
+  });
+}

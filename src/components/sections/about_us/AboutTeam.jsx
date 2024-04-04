@@ -9,18 +9,18 @@ const AboutTeam = () => {
     "Some of the pulvinar diam was for the children, the layer of the Moors.",
   ];
   return (
-    <section class="bg-[url('https://samartheme2.vercel.app/images/background/bg15.png')] flex justify-start items-center gap-24">
-      <div class="w-1/2 flex flex-col">
+    <section class=" flex justify-start items-center gap-24  md:flex-nowrap flex-wrap">
+      <div class="md:w-1/2 flex flex-col w-full">
         {/* <img
           src="https://samartheme2.vercel.app/images/about/pic1.jpg"
           alt="team"
           class="rounded-r-[100px]"
         /> */}
-          <ThreeDCard marignApply={false}/>
-          <ThreeDCard marignApply={true}/>
+        <ThreeDCard marignApply={false} />
+        <ThreeDCard marignApply={true} />
       </div>
 
-      <div class="w-1/3">
+      <div class="md:w-1/3 w-full p-1">
         <div class="flex flex-col gap-[20px]">
           <button className="mb-4 text-lg font-semibold text-heading-1  p-3 rounded-xl bg-gradient-to-tr from-blue-600 to-green-400 w-fit">
             ABOUT US
@@ -45,7 +45,6 @@ const AboutTeam = () => {
           </div>
         </div>
       </div>
-    
     </section>
   );
 };
