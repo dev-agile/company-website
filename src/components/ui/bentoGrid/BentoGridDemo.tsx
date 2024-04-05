@@ -13,7 +13,7 @@ import {
 
 export function BentoGridDemo() {
   return (
-    <BentoGrid className="mx-10">
+    <BentoGrid>
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -34,7 +34,7 @@ const items = [
     {
       title: "Web Development",
       description: "Custom web development including responsive design, e-commerce platforms, and scalable web applications to fuel business growth.",
-      header: "https://source.unsplash.com/random/200x200?web" ,
+      header: "https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/solutions-designed-bg.webp" ,
       icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     },
     {
@@ -46,13 +46,13 @@ const items = [
     {
       title: "Digital Marketing",
       description: "Strategic digital marketing services with SEO, PPC, social media management, and content marketing to elevate your brand.",
-      header: "https://source.unsplash.com/random/200x200?digital" ,
+      header: "https://appinventiv.com/wp-content/uploads/2021/12/Mobile-App-Development-for-Businesses-01.webp" ,
       icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     },
     {
       title: "Graphic Design",
       description: "Professional graphic design from branding and logo to print and digital graphics, enhancing your brand identity.",
-      header: "https://source.unsplash.com/random/200x200?graphic" ,
+      header: "https://appinventiv.com/wp-content/uploads/2024/04/Banner-1.webp" ,
       icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     },
     {
@@ -64,7 +64,7 @@ const items = [
     {
       title: "Cybersecurity",
       description: "Comprehensive cybersecurity services protecting against digital threats, ensuring data integrity, confidentiality, and availability.",
-      header: "https://source.unsplash.com/random/200x200?cybersecurity",
+      header: "https://appinventiv.com/wp-content/uploads/2024/04/Blockchain-for-digital-identity-verification.webp",
       icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
     },
     {

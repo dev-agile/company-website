@@ -9,16 +9,19 @@ export const InfiniteMovingCards = ({
   speed = "fast",
   pauseOnHover = true,
   className,
+  containerClassName,
 }: {
   items: {
     quote: string;
     name: string;
     title: string;
+    imgUrl?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
+  containerClassName?: string;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
@@ -87,24 +90,30 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className=" w-[400px] max-w-full relative rounded-2xl border flex-shrink-0 border-black dark:border-zinc-400  border-r-4 h-72 px-8 py-6 bg-white"
+            className={cn(
+              "w-[400px] max-w-full relative rounded-2xl border flex-shrink-0 border-black dark:border-zinc-400  border-r-4 h-72 px-8 py-6 bg-white text-black",
+              containerClassName
+            )}
             key={item.name}
           >
+            {item.imgUrl && (
+              <div>
+                <img className="!w-20 h-20 max-w-sm" src={item.imgUrl} alt="" />
+              </div>
+            )}
             <blockquote>
               <div
                 aria-hidden="true"
                 className=" user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
 
-              <p className=" text-xl font-bold leading-[1.6] text-black ">
-                {item.title}
-              </p>
-              <p className=" relative z-20 text-base leading-[1.6] text-black font-normal">
+              <p className=" text-xl font-bold leading-[1.6] ">{item.title}</p>
+              <p className=" relative z-20 text-base leading-[1.6]  font-normal">
                 {item.quote}
               </p>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className=" text-base leading-[1.6] text-black font-bold">
+                  <span className=" text-base leading-[1.6]  font-bold">
                     {item.name}
                   </span>
                 </span>
