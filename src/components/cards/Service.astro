@@ -11,25 +11,18 @@ const { title, description, icon } = Astro.props;
 ---
 
 <div
-  class="group p-5 sm:p-6 lg:p-8 rounded-3xl border border-box-border bg-box-bg shadow-lg shadow-box-shadow relative overflow-hidden
-hover:bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
+  class="group p-5 hover:bg-gray-100 dark:hover:bg-zinc-900 rounded bg-white dark:bg-stone-950  border sm:p-6 lg:p-8 rounded-sm relative overflow-hidden transition-colors duration-300"
 >
   <div class="mt-6 space-y-4 relative">
-    <h2
-      class="text-lg md:text-xl font-semibold text-heading-2 group-hover:text-white"
-    >
+    <div class="w-full flex justify-center items-center">
+      <img src={icon} alt="banner image" class="w-16" /> 
+    </div>
+
+    <h2 class="text-3xl font-semibold text-heading-2">
       {title}
     </h2>
-    <Paragraph className="group-hover:text-white">
+    <Paragraph className="">
       {description}
     </Paragraph>
   </div>
-  <div
-    class="rounded-xl mt-3 bg-gray-300 dark:bg-gray-950 p-3 text-heading-1 w-max relative group-hover:text-white"
-  >
-    <slot set:html={icon} />
-  </div>
-  <span
-    class="absolute w-32 aspect-square -bottom-16 -right-16 bg-primary/10 rounded-full"
-  ></span>
 </div>

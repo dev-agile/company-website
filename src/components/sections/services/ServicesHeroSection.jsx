@@ -59,7 +59,7 @@ const ServicesHeroSection = () => {
 
         <BentoGridDemo />
       </div>
-      <Development />
+      {/* <Development /> */}
       <OurGrowth />
       <IndustryDemand />
       <PartnerShip/>

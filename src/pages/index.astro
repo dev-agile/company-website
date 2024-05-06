@@ -7,15 +7,17 @@ import Features from "../components/sections/Features.astro";
 import CTA from "../components/sections/CTA.astro";
 import Brands from "../components/sections/Brands.astro";
 import TestimonialSection from "../components/sections/TestimonialSection.astro";
+import AwardsSection from "../components/AwardsSection";
 ---
 
 <Layout title="Welcome to AgileGeeks">
   <main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
     <Hero />
-    <Brands />
+    <AwardsSection/>
+    <!-- <Brands /> -->
     <Services />
-    <AboutUs />
-    <Features />
+    <!-- <AboutUs /> -->
+    <!-- <Features /> -->
     <CTA />
     <TestimonialSection />
   </main>
