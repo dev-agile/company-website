@@ -2,25 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/sections/Hero.astro";
 import Services from "../components/sections/Services.astro";
-import AboutUs from "../components/sections/about_us/AboutUs.astro";
-import Features from "../components/sections/Features.astro";
 import CTA from "../components/sections/CTA.astro";
-import Brands from "../components/sections/Brands.astro";
 import TestimonialSection from "../components/sections/TestimonialSection.astro";
-import AwardsSection from "../components/AwardsSection";
+import IndustryDemand from "../components/sections/services/IndustryDemand";
 ---
 
 <Layout title="Welcome to AgileGeeks">
   <main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
     <Hero />
-    <AwardsSection/>
-    <!-- <Brands /> -->
     <Services />
-    <!-- <AboutUs /> -->
-    <!-- <Features /> -->
+    <IndustryDemand />
     <CTA />
     <TestimonialSection />
   </main>
-  
-  
 </Layout>

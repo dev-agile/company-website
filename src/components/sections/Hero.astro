@@ -1,44 +1,166 @@
 ---
-import ByNumber from "./ByNumber.astro";
+const slides = [
+  {
+    heading: "Crafting Your Digital Identity",
+    description:
+      "We transform visions into vibrant digital realities. Specializing in web design and development, we ensure your digital presence is as unique as your brand, making lasting impressions in the digital world.",
+    imageUrl:
+      "https://i.pinimg.com/originals/de/9c/2e/de9c2e51b4e742677b9fc4ec7c35c50f.jpg",
+    buttonUrl: "#",
+  },
+  {
+    heading: "Innovative AI Solutions",
+    description:
+      "Harness the power of artificial intelligence to automate processes and gain insights from data, driving efficiency and innovation in your business.",
+    imageUrl:
+      "https://i.pinimg.com/originals/80/c8/7b/80c87bb9b62cf951f90b3692cd9d2e7a.jpg",
+    buttonUrl: "#",
+  },
+  {
+    heading: "Blockchain Technology",
+    description:
+      "Secure and transparent blockchain solutions for various applications including cryptocurrencies, smart contracts, and decentralized applications.",
+    imageUrl:
+      "https://i.pinimg.com/originals/26/f2/8f/26f28ff3e145841b2c33b94c30833c20.jpg",
+    buttonUrl: "#",
+  },
+  {
+    heading: "Cloud Computing",
+    description:
+      "Scalable, reliable, and secure cloud solutions that enhance business operations and reduce infrastructure costs.",
+    imageUrl:
+      "https://i.pinimg.com/564x/d3/8a/b1/d38ab1bdcd4ece8589b169374aefa2d8.jpg",
+    buttonUrl: "#",
+  },
+];
 ---
 
-<section class="relative">
-  <div class="h-screen">
-    <div class="relative overflow-hidden h-5/6">
-      <!-- <video
-        autoplay
-        muted
-        loop
-        class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
-      >
-        <source
-          src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/video/home-video-new.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support HTML5 video.
-      </video> -->
-      <figure class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
-        <img
-          src="https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="About Us"
-          class="w-full h-full object-cover"
-        />
-      </figure>
-      <div
-        class="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-      >
-        <h1
-          class="text-white font-bold text-5xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight"
-        >
-          Crafting Your Digital Identity
-        </h1>
-        <p class="text-white text-2xl font-semibold mt-6">
-          We transform visions into vibrant digital realities. Specializing in
-          web design and development, we ensure your digital presence is as
-          unique as your brand, making lasting impressions in the digital world.
-        </p>
-      </div>
+<section class="relative h-screen overflow-hidden">
+  <div
+    class="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+    id="slide-container"
+  >
+    <figure id="slide-image" class="absolute w-full h-full">
+      <img
+        src={slides[0].imageUrl}
+        alt="Background Image"
+        class="object-cover w-full h-full"
+      />
+    </figure>
+    <div
+      class="absolute inset-0 bg-black opacity-50 transition-opacity duration-1000"
+    >
     </div>
-    <ByNumber />
+    <div
+      id="slide-content"
+      class="absolute inset-0 flex flex-col justify-center items-start text-left text-white p-8 space-y-6 ml-28 transition-opacity duration-1000"
+    >
+      <h1 class="text-5xl font-bold sm:text-4xl md:text-5xl xl:text-6xl">
+        {slides[0].heading}
+      </h1>
+      <p class="text-2xl font-semibold max-w-lg">
+        {slides[0].description}
+      </p>
+      <a
+        href={slides[0].buttonUrl}
+        class="bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-lg text-xl font-semibold"
+      >
+        Explore →
+      </a>
+    </div>
+  </div>
+  <div
+    id="tabs"
+    class="absolute bottom-0 left-0 right-0 flex justify-center items-center space-x-4 p-4 bg-opacity-50 bg-black"
+  >
+    {
+      slides.map((slide, index) => (
+        <div key={index} class="flex flex-col items-center">
+          <span class="text-white">{slide.heading}</span>
+          <div class="w-full h-1 bg-gray-300">
+            <div
+              id={`progress-${index}`}
+              class="h-full bg-blue-500"
+              style="width: 0;"
+            />
+          </div>
+        </div>
+      ))
+    }
   </div>
 </section>
+
+<script>
+  const slides = [
+    {
+      heading: "Crafting Your Digital Identity",
+      description:
+        "We transform visions into vibrant digital realities. Specializing in web design and development, we ensure your digital presence is as unique as your brand, making lasting impressions in the digital world.",
+      imageUrl:
+        "https://i.pinimg.com/originals/de/9c/2e/de9c2e51b4e742677b9fc4ec7c35c50f.jpg",
+      buttonUrl: "#",
+    },
+    {
+      heading: "Innovative AI Solutions",
+      description:
+        "Harness the power of artificial intelligence to automate processes and gain insights from data, driving efficiency and innovation in your business.",
+      imageUrl:
+        "https://i.pinimg.com/originals/80/c8/7b/80c87bb9b62cf951f90b3692cd9d2e7a.jpg",
+      buttonUrl: "#",
+    },
+    {
+      heading: "Blockchain Technology",
+      description:
+        "Secure and transparent blockchain solutions for various applications including cryptocurrencies, smart contracts, and decentralized applications.",
+      imageUrl:
+        "https://i.pinimg.com/originals/26/f2/8f/26f28ff3e145841b2c33b94c30833c20.jpg",
+      buttonUrl: "#",
+    },
+    {
+      heading: "Cloud Computing",
+      description:
+        "Scalable, reliable, and secure cloud solutions that enhance business operations and reduce infrastructure costs.",
+      imageUrl:
+        "https://i.pinimg.com/564x/d3/8a/b1/d38ab1bdcd4ece8589b169374aefa2d8.jpg",
+      buttonUrl: "#",
+    },
+  ];
+  let currentSlide = 0;
+
+  function showSlide(index: any) {
+    const slide = slides[index];
+    const slideImage = document.getElementById("slide-image");
+    const slideContent = document.getElementById("slide-content");
+
+    if (slideImage && slideContent) {
+      const img = slideImage.querySelector("img");
+      if (img) {
+        img.src = slide.imageUrl;
+      }
+      const heading = slideContent.querySelector("h1");
+      const description = slideContent.querySelector("p");
+      const button = slideContent.querySelector("a");
+
+      if (heading && description && button) {
+        heading.textContent = slide.heading;
+        description.textContent = slide.description;
+        button.href = slide.buttonUrl;
+      }
+    }
+
+    document.querySelectorAll("#tabs .w-full").forEach((el, i) => {
+      el.style.width = i === index ? "100%" : "0";
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 5000);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlide(currentSlide);
+  });
+</script>

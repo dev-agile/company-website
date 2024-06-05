@@ -1,37 +1,52 @@
 const services = [
     {
-        title: "ReactJS Development",
-        description: "Expert ReactJS development services to build dynamic user interfaces and single-page applications with optimal performance and scalability.",
-        icon: `/icons/react.png`,
+        title: "Artificial Intelligence (AI)",
+        description: "Leveraging AI to build intelligent systems that can analyze data, recognize patterns, and make decisions with minimal human intervention.",
+        icon: "https://cdn-icons-png.flaticon.com/512/3370/3370525.png",
     },
     {
-        title: "Next.js Custom Solutions",
-        description: "Tailored Next.js solutions leveraging server-side rendering and static site generation for fast, SEO-friendly web applications.",
-        icon: `/icons/nextjs.png`,
+        title: "Blockchain Solutions",
+        description: "Developing secure and transparent blockchain solutions for various applications including cryptocurrencies, smart contracts, and decentralized applications (dApps).",
+        icon: "https://cdn-icons-png.flaticon.com/512/3370/3370544.png",
     },
     {
-        title: "React Native Mobile Apps",
-        description: "Create seamless, native-like mobile applications for both Android and iOS platforms using React Native, ensuring high performance and user engagement.",
+        title: "Web Development",
+        description: "Creating responsive and robust web applications using modern technologies such as React, Next.js, and TypeScript to ensure high performance and scalability.",
+        icon: "https://cdn-icons-png.flaticon.com/512/3761/3761528.png",
+    },
+    {
+        title: "Mobile App Development",
+        description: "Building seamless and high-performing mobile applications for both Android and iOS platforms using React Native and other modern technologies.",
         icon: `/icons/mobile.png`,
     },
     {
-        title: "JavaScript & Node.js Integration",
-        description: "Utilize the full power of JavaScript and Node.js for building scalable and efficient back-end services, APIs, and real-time applications.",
-        icon: `/icons/js.png`,
-    },
-    {
-        title: "TypeScript Development",
-        description: "Enhance your development process with TypeScript for safer code, better maintainability, and developer productivity in your React and Node.js projects.",
-        icon: `/icons/typescript.png`,
-        
-    },
-    {
         title: "Custom Software Solutions",
-        description: "Bespoke software development utilizing the latest in web technologies including ReactJS, Next.js, Node.js, and more to solve unique business challenges.",
-        icon: `/icons/pc.png`,
+        description: "Providing bespoke software development services tailored to meet unique business challenges using the latest technologies and methodologies.",
+        icon: "https://cdn-icons-png.flaticon.com/512/2885/2885525.png",
     },
-    
+    {
+        title: "Cloud Computing",
+        description: "Utilizing cloud platforms to develop scalable, reliable, and secure solutions that enhance business operations and reduce infrastructure costs.",
+        icon: "https://cdn-icons-png.flaticon.com/512/3700/3700255.png",
+    },
+    {
+        title: "Internet of Things (IoT)",
+        description: "Developing interconnected devices that can communicate and exchange data, enhancing automation and control in various environments.",
+        icon: "https://cdn-icons-png.flaticon.com/512/3194/3194651.png",
+    },
+    {
+        title: "Cybersecurity",
+        description: "Implementing robust security measures to protect systems, networks, and data from cyber threats and ensuring compliance with industry standards.",
+        icon: "https://cdn-icons-png.flaticon.com/512/2906/2906233.png",
+    },
+    {
+        title: "DevOps",
+        description: "Integrating development and operations to improve collaboration, automate workflows, and enhance the speed and reliability of software delivery.",
+        icon: "https://cdn-icons-png.flaticon.com/512/3194/3194652.png",
+    },
 ];
+
+
 
 const portfolioCaseStudy = [
     {
