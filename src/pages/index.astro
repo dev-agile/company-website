@@ -1,10 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/sections/Hero.astro";
-import Services from "../components/sections/Services.astro";
-import CTA from "../components/sections/CTA.astro";
+import Hero from "../components/sections/landingPage/Hero.astro";
+import Services from "../components/sections/landingPage/Services.astro";
+import CTA from "../components/sections/landingPage/CTA.astro";
 import TestimonialSection from "../components/sections/TestimonialSection.astro";
 import IndustryDemand from "../components/sections/services/IndustryDemand";
+import { GoogleGeminiEffectDemo } from "../components/ui/google-gemini-effect/GoogleGeminiEffect";
+import { SparklesPreview } from "../components/ui/sparkles/SparklesBg";
 ---
 
 <Layout title="Welcome to AgileGeeks">
@@ -12,7 +14,7 @@ import IndustryDemand from "../components/sections/services/IndustryDemand";
     <Hero />
     <Services />
     <IndustryDemand />
-    <CTA />
+    <!-- <CTA /> -->
     <TestimonialSection />
   </main>
 </Layout>

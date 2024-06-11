@@ -40,7 +40,8 @@ export function BackgroundBoxes() {
               "text-transparent mt-24 sm:mt-2 text-4xl sm:text-7xl text-center font-bold bg-clip-text bg-gradient-to-br from-[#83aaff] to-[#254975]"
             )}
           >
-            Let's Connect
+                       Build awesome applications with Agilegeeks
+
           </h1>
           <TypewriterEffectSmooth className="z-40" words={words} />
           <p
@@ -50,10 +51,8 @@ export function BackgroundBoxes() {
               "w-[95%]"
             )}
           >
-            Start your transformation journey today. Whether it's a query,
-            project, or a visionary idea,
-             we're here to listen and elevate your digital potential.
-          </p>
+            We transform visions into vibrant digital realities. Specializing in
+            web design and development,</p>
           <p
             className={cn(
               "z-20",
@@ -61,12 +60,13 @@ export function BackgroundBoxes() {
               "mt-5"
             )}
           >
-            Experience seamless communication, comprehensive support, and
-            bespoke solutions tailored just for you.
+            we ensure your digital presence is as
+            unique as your brand, making lasting impressions in the digital
+            world.
           </p>
           <div className="mt-10 flex flex-col items-center gap-10">
            
-            <MovingBorderButton title="Join Our Team" />
+            {/* <MovingBorderButton title="Join Our Team" /> */}
           </div>
          
         </div>

@@ -4,7 +4,7 @@ import { MeteorsCard } from "../../ui/meteors/MeteorsCard";
 import { BentoGridDemo } from "../../ui/bentoGrid/BentoGridDemo";
 import Development from "./Development";
 import OurGrowth from "./OurGrowth";
-import IndustryDemand from "./IndustryDemand";
+// import IndustryDemand from "./IndustryDemand";
 import PartnerShip from "./PartnerShip";
 const companyServices = [
   {
@@ -61,7 +61,7 @@ const ServicesHeroSection = () => {
       </div>
       {/* <Development /> */}
       <OurGrowth />
-      <IndustryDemand />
+      {/* <IndustryDemand /> */}
       <PartnerShip/>
     </React.Fragment>
   );

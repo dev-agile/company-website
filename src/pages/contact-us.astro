@@ -1,15 +1,11 @@
 ---
 import ContactForm from "../components/sections/contact/ContactForm.jsx";
+import { LampBackground } from "../components/ui/lamp/LampBackground";
 import Layout from "../layouts/Layout.astro";
-import NewsLetter from '../components/sections/services/NewsLetter'
-import HeroSection from "../components/sections/contact/HeroSection";
-import AgilegeeksAroundTheWorld from '../components/sections/contact/AgilegeeksAroundTheWorld'
-
 ---
 
 <Layout title="Welcome to AgileGeeks">
-  <HeroSection client:only/>
+  <LampBackground client:only />
+  <p class="text-6xl text-white text-center">Contact Us</p>
   <ContactForm client:only />
-  <AgilegeeksAroundTheWorld client:only/>
-  <!-- <NewsLetter client:only/> -->
 </Layout>

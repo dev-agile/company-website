@@ -7,12 +7,13 @@ import ByNumber from "../components/sections/ByNumber.astro";
 import AboutTeam from "../components/sections/about_us/AboutTeam.jsx";
 import TestimonialSection from "../components/sections/TestimonialSection.astro";
 import NewsLetter from "../components/sections/services/NewsLetter";
-import {LampBackground} from '../components/ui/lamp/LampBackground';
+import { LampBackground } from "../components/ui/lamp/LampBackground";
+import HeroSection from "../components/sections/contact/HeroSection";
 ---
 
 <Layout title="Welcome to AgileGeeks">
   <main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
-    <LampBackground client:only />
+    <HeroSection client:only />
     <AboutInfo client:only />
     <HowItWorks client:only />
     <ByNumber />

@@ -37,6 +37,8 @@ module.exports = {
         "2xl": "1536px",
       },
       animation: {
+        spotlight: "spotlight 2s ease .75s 1 forwards",
+
         "meteor-effect": "meteor 5s linear infinite",
         shimmer: "shimmer 2s linear infinite",
         scroll:
@@ -49,6 +51,16 @@ module.exports = {
         fifth: "moveInCircle 20s ease infinite",
       },
       keyframes: {
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
         shimmer: {
           from: {
             "backgroundPosition": "0 0"
