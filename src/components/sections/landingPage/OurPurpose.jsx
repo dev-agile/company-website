@@ -21,7 +21,7 @@ const OurPurpose = () => {
                 <div className="text-gray-300">
                     <img className='bg-white p-4 rounded-md w-10 h-10' src="https://hcltech.imgix.net/sites/default/files/images/about-us/qoute.png" alt="" />
                     <p className="text-lg md:text-xl mb-4 mt-2">
-                        At Agilegeeks, our purpose is to leverage technology to make a significant impact on the world.
+                        At Cognivac, our purpose is to leverage technology to make a significant impact on the world.
                         We aim to solve complex problems, enhance everyday life, and accelerate innovation across various industries.
                         Our mission is rooted in the belief that technology can transform lives and should be accessible to everyone.
                     </p>

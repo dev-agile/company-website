@@ -40,7 +40,7 @@ export function BackgroundBoxes() {
               "text-transparent mt-24 sm:mt-2 text-4xl sm:text-7xl text-center font-bold bg-clip-text bg-gradient-to-br from-[#83aaff] to-[#254975]"
             )}
           >
-                       Build awesome applications with Agilegeeks
+                       Build awesome applications with Cognivac
 
           </h1>
           <TypewriterEffectSmooth className="z-40" words={words} />

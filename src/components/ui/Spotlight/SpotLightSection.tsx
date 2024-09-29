@@ -15,7 +15,7 @@ export function SpotlightPreview() {
 
         </h1>
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-3xl text-center mx-auto">
-        At Agilegeeks, we specialize in empowering businesses through cutting-edge web, mobile, and AI solutions. Our expert team leverages the latest technologies to deliver custom, high-performance applications that drive innovation and growth. Whether you're looking to enhance your online presence, engage users on mobile platforms, or harness the power of artificial intelligence, we provide tailored solutions designed to elevate your business and ensure long-term success.
+        At Cognivac, we specialize in empowering businesses through cutting-edge web, mobile, and AI solutions. Our expert team leverages the latest technologies to deliver custom, high-performance applications that drive innovation and growth. Whether you're looking to enhance your online presence, engage users on mobile platforms, or harness the power of artificial intelligence, we provide tailored solutions designed to elevate your business and ensure long-term success.
           copy.
         </p>
       </div>
