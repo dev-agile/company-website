@@ -1,20 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/sections/Hero.astro';
-import Services from '../components/sections/Services.astro';
-import AboutUs from '../components/sections/AboutUs.astro';
-import Features from '../components/sections/Features.astro';
-import CTA from '../components/sections/CTA.astro';
-import Brands from '../components/sections/Brands.astro';
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/sections/landingPage/Hero.astro";
+import Services from "../components/sections/landingPage/Services.astro";
+import CTA from "../components/sections/landingPage/CTA.astro";
+import TestimonialSection from "../components/sections/TestimonialSection.astro";
+import IndustryDemand from "../components/sections/services/IndustryDemand";
+import { GoogleGeminiEffectDemo } from "../components/ui/google-gemini-effect/GoogleGeminiEffect";
+import { SparklesPreview } from "../components/ui/sparkles/SparklesBg";
 ---
 
-<Layout title="Welcome to AgenceX">
-	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
-		<Hero/>
-		<Brands/>
-		<Services/>
-		<AboutUs/>
-		<Features/>
-		<CTA/>
-	</main>
+<Layout title="Welcome to Cognivac">
+  <main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+    <Hero />
+    <Services />
+    <IndustryDemand />
+    <!-- <CTA /> -->
+    <TestimonialSection />
+  </main>
 </Layout>

@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ServicesHeroSection from '../components/sections/services/ServicesHeroSection'
+---
+
+<Layout title="Welcome to Cognivac">
+  <main class="flex flex-col gap-y-20 overflow-hidden">
+   <ServicesHeroSection client:only/>
+   <!-- <ServicesBody/> -->
+   <!-- <OurServices/> -->
+   <!-- <ServicesInTechnology/> -->
+   <!-- <NewsLetter/> -->
+  </main>
+</Layout>
